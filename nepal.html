@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  
+
+
+
+</head>
+
+ 
+
+
+
+
+<style>
+
+<body style="background-color:powderblue;">
+ {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="about1.html">About</a>
+  <a href="cv.html">My Cv</a>
+  <a href="new.html">Biography</a>
+   <a href="hotel.html">Hotel Gallery</a>
+</div>
+<h1> <b><b><blink><p style="color:red;">Visit Nepal 2022</p></h1></blink>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+  <div>
+  <img src="flag.gif" alt="Computer man" style="width:360px;height:360px;">
+  <img src="map.jpg" alt="Computer man" style="width:360px;height:360px;">
+  <img src="pahuna.jpg" alt="Computer man" style="width:360px;height:360px;">
+  <img src="name.jpg" alt="Computer man" style="width:360px;height:360px;">
+  <div>
+  </div>
+  <audio controls>
+  <source src="nation.mp3" type="audio/mp3">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+    <img src= "C:\Users\USER\Downloads\image3.jpg " style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src= "C:\Users\USER\Downloads\image1.jpg " style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src= "C:\Users\USER\Downloads\image2.jpg " style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<iframe width="2020" height="400"  src="https://www.youtube.com/embed/dW5kRBq30m4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</iframe>
+
+
+
+<p style="color:green;">
+Nepal (English: /nɪˈpɔːl/;[14] Nepali: नेपाल [nepal]), formerly the Federal Democratic Republic of Nepal (Nepali: सङ्घीय लोकतान्त्रिक गणतन्त्र नेपाल),[15] is a landlocked country in South Asia. It is mainly situated in the Himalayas, but also includes parts of the Indo-Gangetic Plain, bordering the Tibet Autonomous Region of China to the north, and India in the south, east, and west, while it is narrowly separated from Bangladesh by the Siliguri Corridor, and from Bhutan by the Indian state of Sikkim. Nepal has a diverse geography, including fertile plains, subalpine forested hills, and eight of the world's ten tallest mountains, including Mount Everest, the highest point on Earth. Nepal is a multi-ethnic, multi-lingual, multi-religious and multi-cultural state, with Nepali as the official language. Kathmandu is the nation's capital and the largest city.</p>
+
+<h1>
+  <p style="color:orangered;">places to visit in nepal <h1>
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<div class="row">
+  <div class="column">
+  <a href="https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%88%E3%83%9E%E3%83%B3%E3%82%BA">  <img src =" C:\Users\USER\Downloads\image6.jpg "  alt="Snow" style="width:100%"></a>
+    <p>Kathmandu</p>
+  </div>
+  <div class="column">
+   <a href=" https://ja.wikipedia.org/wiki/%E3%83%9D%E3%82%AB%E3%83%A9" ><img src =" C:\Users\USER\Downloads\image7.jpg "  alt="Snow" style="width:100%">
+     <p>syambhu </p></a>
+  </div>
+  <div class="column">
+    <img src =" C:\Users\USER\Downloads\image8.jpg "  alt="Snow" style="width:100%">
+     <p>Pokhara</p>
+  </div>
+  <div class="row">
+    <img src =" C:\Users\USER\Downloads\image9.jpg "  alt="Snow" style="width:60%">
+     <p>Mustang</p>
+  </div>
+  <div class="column">
+    <img src =" C:\Users\USER\Downloads\image10.jpg "  alt="Snow" style="width:100%">
+     <p>Chitwan Nation Park</p>
+  </div>
+  <div class="column">
+    <img src =" C:\Users\USER\Downloads\lumbini.jpg "  alt="Snow" style="width:100%">
+     <p>Lumbini</p>
+  </div>
+  <div class="column">
+    <img src =" C:\Users\USER\Downloads\temple.jpg "  alt="Snow" style="width:100%">
+     <p>Manakamana</p>
+  </div>
+</div>
+<h1> Short Video Tour </h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/DJlmVOSEvGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+</iframe>
+  <iframe width="420" height="345"  src="https://www.youtube.com/embed/k9zxVzDf4Go" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+</iframe>
+<iframe width="420" height="345"  src="https://www.youtube.com/embed/F5KOF9M8Zf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+</iframe>
+  
+  
+  
+ 
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+  
+ 
+</div>
+</div>
+<h1><p style="color:blue;">Event and Festivals</h1>
+<div class="row">
+  <div class="column">
+    <img src =" C:\Users\USER\Downloads\sarad.jpg "  alt="Snow" style="width:100%">
+    <p>Dashain</p>
+  </div>
+  <div class="column">
+    <img src =" C:\Users\USER\Downloads\tihar.jpg "  alt="Snow" style="width:100%">
+    <p>Tihar</p>
+  </div>
+  <div class="column">
+    <img src =" C:\Users\USER\Downloads\bhai.jpg "  alt="Snow" style="width:100%">
+    <p>vaitika</p>
+  </div>
+  <div class="rows">
+    <img src =" C:\Users\USER\Downloads\holi.jpg "  alt="Snow" style="width:50%">
+    <p>Holi</p>
+  </div>
+  <div class="column">
+    <img src =" C:\Users\USER\Downloads\chat.jpg "  alt="Snow" style="width:100%">
+    <p>Chat Puja</p>
+  </div>
+  <div class="column">
+    <img src =" C:\Users\USER\Downloads\lake.jpg "  alt="Snow" style="width:100%">
+    <p>Lake</p>
+  </div>
+</div>
+<h1> <b><b><blink><p style="color:blue;">Short Video of festival in Nepal</p></h1></blink>
+   <iframe width="420" height="345" src= "https://www.youtube.com/embed/WVCKNaBVehQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</iframe>
+  <iframe width="420" height="345"  src= "https://www.youtube.com/embed/lODAb-HmC4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</iframe>
+  <iframe width="420" height="345"  src="https://www.youtube.com/embed/8itkQIq5rwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</iframe>
+  </div>
+<div class="responsive-map">
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26137.507690315593!2d135.7346557485648!3d35.02701489250994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010875f5756609%3A0xef53d8dad297d521!2sKamigyo%20Ward%2C%20Kyoto!5e0!3m2!1sen!2sjp!4v1666662308170!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+
+
+
+
+  
+ 
+
+<div class="myDiv">
+  <h2>For Booking Reservation</h2>
+  
+  <form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Email Address:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Phone no:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  
+    <textarea id="subject"  placeholder="Write something.." style="height:200px"></textarea>
+
+  <input type="submit" value="Submit">
+  <input type="submit" value="clear">
+</form>
+<h1>Way of Travel</h1>
+
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> Aeroplane</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> Bus</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> Car</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+<br></br>
+
+<label for="cars">Choose a city:</label>
+
+<select name="cars" id="cars">
+  <option value="volvo">Kathmandu</option>
+  <option value="saab">Pokhara</option>
+  <option value="mercedes">Manag</option>
+  <option value="audi">Manakamana</option>
+</select>
+</div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Follow me </h2>
+
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+
+    <style>
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;    
+  text-align: center;
+}
+</style>
+<address>
+  <h3>
+Written by <a href="asisthapa81.com">Ashish Thapa</a>.<br>
+
+
+Box 502, Kyoto<br>
+Japan
+</address></h3>
+
+
+
+
+
+  
+</body>
+</html> 
+
+</body>
+</html> 
